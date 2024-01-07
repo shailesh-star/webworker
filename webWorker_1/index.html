@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Worker Demo</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Web Worker Demo</h1>
+    <button onclick="startWorker()">Start Worker</button>
+    <button onclick="stopWorker()">Stop Worker</button>
+    <button id="bgButton" onclick="changeButtonColor()">Change color</button>
+
+    <div id="result"></div>
+
+    <div id="clickableArea" onclick="showRandomImage()">
+      <!-- Images that appear upon clicking -->
+      <img src="image1.jpg" class="hiddenImage" id="image1">
+      <img src="image2.jpg" class="hiddenImage" id="image2">
+      <img src="image3.jpg" class="hiddenImage" id="image3">
+  </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

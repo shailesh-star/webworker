@@ -1,0 +1,45 @@
+
+body {
+    background-color: #f0f0f0;
+}
+
+#clickableArea {
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+    position: relative;
+}
+
+.hiddenImage {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#result {
+    font-size: 2em;
+    font-family: 'Courier New', monospace; /* Use a monospaced font for the matrix effect */
+    text-align: center;
+    line-height: 1.5;
+    color: red;
+    font-weight: bold;
+    animation: matrixAnimation 2s infinite; /* Add a subtle animation */
+}
+
+@keyframes matrixAnimation {
+    0% {
+        opacity: 0.5;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(5px);
+    }
+    100% {
+        opacity: 0.5;
+        transform: translateY(0);
+    }
+}
